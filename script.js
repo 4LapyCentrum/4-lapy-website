@@ -14,8 +14,38 @@ document.addEventListener('DOMContentLoaded', function() {
                     block: 'start'
                 });
             }
+
+            // Close mobile menu if open
+            const mobileNav = document.querySelector('.mobile-nav');
+            if (mobileNav && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+            }
         });
     });
+
+    // Mobile menu toggle functionality
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    
+    if (mobileMenuToggle && mobileNav) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileMenuToggle.contains(e.target) && !mobileNav.contains(e.target)) {
+                mobileNav.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu on window resize to desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                mobileNav.classList.remove('active');
+            }
+        });
+    }
 
     // Header background change on scroll
     const header = document.querySelector('.header');
