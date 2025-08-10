@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (header) {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 100) {
-                header.style.background = 'rgba(139, 195, 74, 0.95)';
+                header.style.background = 'rgba(242, 113, 39, 0.95)';
             } else {
-                header.style.background = 'linear-gradient(135deg, #8BC34A 0%, #689F38 100%)';
+                header.style.background = 'linear-gradient(135deg, #F27127 0%, #D65A1A 100%)';
             }
         });
     }
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     isValid = false;
                     field.style.borderColor = '#e74c3c';
                 } else {
-                    field.style.borderColor = '#8BC34A';
+                    field.style.borderColor = '#F27127';
                 }
             });
             

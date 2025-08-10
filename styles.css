@@ -25,7 +25,7 @@ body {
 
 /* Header Styles */
 .header {
-    background: linear-gradient(135deg, #8BC34A 0%, #689F38 100%);
+    background: linear-gradient(135deg, #F27127 0%, #D65A1A 100%);
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -59,10 +59,12 @@ body {
 }
 
 .logo img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    /* object-fit: contain; */
+    background: white;
+    border-radius: 20%;
+    padding: 15px;
 }
 
 .social-icons {
@@ -119,7 +121,7 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    background: linear-gradient(135deg, #8BC34A 0%, #689F38 100%);
+    background: linear-gradient(135deg, #F27127 0%, #D65A1A 100%);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     border-top: 1px solid rgba(255,255,255,0.1);
     transform: translateY(-100%);
@@ -164,36 +166,42 @@ body {
 
 .hero-overlay {
     background: rgba(0,0,0,0.5);
-    width: 100%;
+    width: 120%;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+    margin-left: -10%;
 }
 
 .hero-content {
     color: white;
-    max-width: 600px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .hero-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: 300;
 }
 
 .hero-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     font-weight: 300;
 }
 
 .highlight {
-    color: #8BC34A;
+    color: #F27127;
     font-weight: 600;
 }
 
 .cta-button {
-    background: linear-gradient(135deg, #8BC34A 0%, #689F38 100%);
+    background: linear-gradient(135deg, #F27127 0%, #D65A1A 100%);
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -202,11 +210,14 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-weight: 600;
+    width: fit-content;
+    display: inline-block;
+    align-self: center;
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(139, 195, 74, 0.3);
+    box-shadow: 0 10px 25px rgba(242, 113, 39, 0.3);
 }
 
 /* About Section */
@@ -232,33 +243,6 @@ body {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.8;
-}
-
-.credentials {
-    margin-top: 2rem;
-}
-
-.credentials h3 {
-    color: #8BC34A;
-    margin-bottom: 1rem;
-}
-
-.credentials ul {
-    list-style: none;
-}
-
-.credentials li {
-    padding: 0.5rem 0;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-.credentials li:before {
-    content: "✓";
-    color: #8BC34A;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
 }
 
 .about-image img {
@@ -299,7 +283,7 @@ body {
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    border-color: #8BC34A;
+    border-color: #F27127;
 }
 
 .service-card h3 {
@@ -326,21 +310,21 @@ body {
 .price {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #8BC34A;
+    color: #F27127;
 }
 
 .travel-info {
     text-align: center;
     margin-top: 2rem;
     padding: 1rem;
-    background: #e8f5e8;
+    background: #F37E36FF;
     border-radius: 10px;
 }
 
 /* Registration Section */
 .registration {
     padding: 5rem 0;
-    background: linear-gradient(135deg, #8BC34A 0%, #689F38 100%);
+    background: linear-gradient(135deg, #F27127 0%, #D65A1A 100%);
     color: white;
     text-align: center;
 }
@@ -367,7 +351,7 @@ body {
     align-items: center;
     gap: 0.5rem;
     background: white;
-    color: #8BC34A;
+    color: #F27127;
     padding: 1rem 2rem;
     border-radius: 50px;
     text-decoration: none;
@@ -423,12 +407,12 @@ body {
 }
 
 .contact-icon:hover {
-    color: #8BC34A;
+    color: #F27127;
     transform: scale(1.1);
 }
 
 .form-button {
-    background: linear-gradient(135deg, #8BC34A 0%, #689F38 100%);
+    background: linear-gradient(135deg, #F27127 0%, #D65A1A 100%);
     color: white;
     padding: 1rem 2rem;
     border-radius: 50px;
@@ -441,7 +425,7 @@ body {
 
 .form-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(139, 195, 74, 0.3);
+    box-shadow: 0 10px 25px rgba(242, 113, 39, 0.3);
 }
 
 .contact-footer {
@@ -476,7 +460,7 @@ body {
 }
 
 .faq-item h3 {
-    color: #8BC34A;
+    color: #F27127;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -495,7 +479,7 @@ body {
 }
 
 .scroll-top {
-    background: #8BC34A;
+    background: #F27127;
     color: white;
     border: none;
     width: 50px;
@@ -523,7 +507,7 @@ body {
 }
 
 .footer-social a:hover {
-    color: #8BC34A;
+    color: #F27127;
 }
 
 .footer-links {
@@ -613,8 +597,8 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #8BC34A;
-    box-shadow: 0 0 0 3px rgba(139, 195, 74, 0.1);
+    border-color: #F27127;
+    box-shadow: 0 0 0 3px rgba(242, 113, 39, 0.1);
 }
 
 .form-group textarea {
@@ -663,8 +647,8 @@ body {
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark {
-    background: #8BC34A;
-    border-color: #8BC34A;
+    background: #F27127;
+    border-color: #F27127;
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark:after {
@@ -675,7 +659,7 @@ body {
 }
 
 .checkbox-label a {
-    color: #8BC34A;
+    color: #F27127;
     text-decoration: none;
 }
 
@@ -685,7 +669,7 @@ body {
 
 /* Submit Button */
 .submit-button {
-    background: linear-gradient(135deg, #8BC34A 0%, #689F38 100%);
+    background: linear-gradient(135deg, #F27127 0%, #D65A1A 100%);
     color: white;
     border: none;
     padding: 1.2rem 2.5rem;
@@ -703,7 +687,7 @@ body {
 
 .submit-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(139, 195, 74, 0.3);
+    box-shadow: 0 10px 25px rgba(242, 113, 39, 0.3);
 }
 
 /* Contact Info */
@@ -730,17 +714,17 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #8BC34A;
+    color: #F27127;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
     padding: 0.75rem 1.5rem;
-    border: 2px solid #8BC34A;
+    border: 2px solid #F27127;
     border-radius: 50px;
 }
 
 .contact-method:hover {
-    background: #8BC34A;
+    background: #F27127;
     color: white;
 }
 
@@ -803,8 +787,8 @@ body {
     }
 
     .logo img {
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
 
     .hero-content h1 {
@@ -881,8 +865,8 @@ body {
     }
 
     .logo img {
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 45px;
     }
 
     .mobile-nav .nav-link {
